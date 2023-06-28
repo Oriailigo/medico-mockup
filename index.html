@@ -13,22 +13,43 @@
     
     
     <title>Document</title>
-</head>
+
+    <style>
+      .primero,.segundo,#tercero_oc { display:none; padding:5px; border:1px solid #ccc; background-color:#f1f1f1; position:relative; width:200px; }
+      #segundo { position:absolute; top:100px; }
+      /* Al pasar el mouse por encima del div mostramos el div con la clase ".primero". Esta clase, tiene que estar dentro del id "primero" para que pueda funcionar */
+      #primero:hover .primero { display:block; }
+      #segundo:hover .segundo { display:block; }
+      li {list-style: none}
+      </style>
+    
+  </head>
 
    
 
 <body id="body-pd">
+
+    
+    
+      <ul>
+        <li id="primero">mostrar el primer div oculto <div class="primero">Contenido del primer div</div> </li>
+        <li id="segundo">mostrar el segundo div oculto <div class="segundo">Contenido del segundo div</div> </li>
+      </ul>
+    
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
         <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
     </header>
-    <div class="l-navbar" id="nav-bar">
+    
+      <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">CentroMedico</span> </a>
                 <div class="nav_list"> <a href="#" class="nav_link active"> <iconify-icon icon="fluent:form-new-24-regular" class="nav_icon"></iconify-icon> <span class="nav_name">Crear pacientes</span> </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Lista de pacientes</span> </a> <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Historias clinicas</span> </a> <a href="#" class="nav_link"> <iconify-icon icon="dashicons:admin-generic" class="nav_icon"></iconify-icon>  <span class="nav_name">Admin</span> </a> </div>
             </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
         </nav>
+    
     </div>
+
     <!--Container Main start-->
     <div class="height-100 bg-light">
         <h4>Main Components</h4>
