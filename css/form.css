@@ -17,7 +17,7 @@
 
 }
 .container {
-    max-width: 1000px;
+    max-width: 900rem!important;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -30,11 +30,11 @@
 
 .responsive-table li {
     border-radius: 3px;
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     
     display: flex;
-    justify-content: space-between;
+    gap:2rem;
     margin-bottom: 25px;
 
 }
@@ -57,6 +57,7 @@
 
 }
 .responsive-table .table-row-uno {
+  
     background-color:var(--color-light-th);
     box-shadow: 4px 0px 5px 0px rgba(22, 16, 16, 0.743);
     border-width: 2px;
@@ -125,17 +126,17 @@
     border-bottom-right-radius:8px; 
 }
 .responsive-table .col-1 {
-    flex-basis: 8.6%;
+    flex-basis: 10.6%;
     
 }
 .responsive-table .col-2 {
     flex-basis: 9.6%;
 }
 .responsive-table .col-3 {
-    flex-basis: 9.6%;
+    flex-basis: 6.6%;
 }
 .responsive-table .col-4 {
-    flex-basis: 16.6%;
+    flex-basis: 6.6%;
 }
 .responsive-table .col-5 {
     flex-basis: 16.7%;
@@ -211,5 +212,93 @@
     width: 100%!important; 
 }
 }
+
+
+/** BEGIN: Non Openmrs CSS **/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+	font-family: "Roboto";
+}
+
+
+:root {
+	--omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--omrs-color-interaction: #1e4bd1;
+	--omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+	--omrs-color-danger: #b50706;
+	--omrs-color-bg-low-contrast: #eff1f2;
+	--omrs-color-ink-high-contrast: #121212;
+	--omrs-color-bg-high-contrast: #ffffff;
+	
+}
+/** END: Non Openmrs CSS **/
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20.4375rem;
+  
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+    border-radius: 10px;
+	border: none;
+	border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+	width: 100%;
+	height: 4rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+	outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: var(--omrs-color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+
+
+
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+	background: var(--omrs-color-interaction-minus-two);
+	border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+	color: var(--omrs-color-interaction);
+}
+
+
+
+
+
+
 
 

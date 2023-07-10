@@ -2,8 +2,8 @@
 :root {
   --header-height: 3rem;
   --nav-width: 68px;
-  --first-color: #4723d9;
-  --first-color-light: #afa5d9;
+  --first-color:#2596be;
+  --first-color-light:#a9bed5;
   --white-color: #f7f6fb;
   --body-font: "Nunito", sans-serif;
   --normal-font-size: 1rem;
@@ -127,7 +127,7 @@ a {
 @media screen and (min-width: 768px) {
   body {
     margin: calc(var(--header-height) + 1rem) 0 0 0;
-    padding-left: calc(var(--nav-width) + 2rem);
+    padding-left: calc(var(--nav-width) + 0rem);
   }
   .header {
     height: calc(var(--header-height) + 1rem);
@@ -142,7 +142,7 @@ a {
   }
   .l-navbar {
     left: 0;
-    padding: 1rem 1rem 0 0;
+    padding: 1rem 2rem 0 0;
   }
   .show {
     width: calc(var(--nav-width) + 156px);
@@ -150,6 +150,6 @@ a {
 
   
   .body-pd {
-    padding-left: calc(var(--nav-width) + 188px);
+    padding-left: calc(var(--nav-width) + 156px);
   }
 }
